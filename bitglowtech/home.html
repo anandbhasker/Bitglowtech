@@ -6,7 +6,8 @@
     <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="hpstyle.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<script src=""> </script>
+	<script src="main.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -17,13 +18,13 @@
                     <li><a href="first_sec">Home</a></li>
                     <li><a href="our-services">Services</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    
                     
                 </ul>
             </nav>
             <a class="cta" href="#contact">
                 <button class="Contact_button">
-                    Get Started
+                   Contact Us
                 </button>
             </a>
         </div>
@@ -77,7 +78,7 @@
 		<section class="portfolio" id="portfolio">
 			<h2>Our Projects</h2>
 			<div class="portfolio-grid">
-				<div class="portfolio-item">
+				<div class="portfolio-item">	
 					<div class="portfolio-img" style="background:#1f4068;"></div>
 					<h3>E-Commerce Website</h3>
 					<p>Complete online store solution</p>
@@ -97,22 +98,14 @@
 
         <section class="contact-box" id="contact">
 			<h2>Contact Us</h2>
-			<form action="https://formspree.io/f/xgvanjkq" method="POST" id="contact-form">
-		
-				<input type="text" name="Name" placeholder="Enter your name" required>
+			
+			<form id="contactForm" method="POST" action="http://localhost:5500/contact">
+				<input type="text" name="name" placeholder="Enter your name" required>
 				<input type="email" name="email" placeholder="Enter your email" required>
 				<textarea rows="5" name="message" placeholder="Share your thoughts" required></textarea>
-				
-				
-				<input type="hidden" name="_subject" value="New message from your website!">
-				<input type="text" name="_gotcha" style="display:none;"> <!-- Anti-spam -->
-				
-				<!-- Submit Button -->
-				<input type="submit" value="Send Message" class="submit-btn">
-			</form>
-			
-			<!-- Success/Error Message Container -->
-			<div id="form-status" class="form-message"></div>
+				<input type="submit" value="Submit">
+			  </form>
+			  
 		</section>
 		<section class="about-us" id="about">
 			<div class="about-container">
@@ -250,7 +243,7 @@
 		<!-- Copyright/Bottom Bar -->
 		<div class="footer-bottom">
 			<div class="footer-bottom-container">
-				<p>&copy; 2023 TechNova Solutions. All Rights Reserved.</p>
+				<p>&copy; 2025 BitGLOW Solutions. All Rights Reserved.</p>
 				<div class="legal-links">
 					<a href="#">Privacy Policy</a>
 					<a href="#">Terms of Service</a>
@@ -270,6 +263,6 @@
 			</a>
 		  </div>
 		</div>
-	  </div>
+	  </div>	
 </body>
 </html>
